@@ -1,0 +1,18 @@
+#version 330 core
+
+// Interpolated UV coordinates from the vertex shader.
+in vec2 vUV;
+// Final fragment color.
+out vec4 fColor;
+// Bound atlas texture.
+uniform sampler2D uTexture;
+
+void main() {
+    // Sample the atlas at the interpolated UV coordinate.
+    vec4 tex = texture(uTexture, vUV);
+    // Remove nearly transparent pixels so cutout textures behave like opaque shapes.
+    if (tex.a < 0.01)
+        discard;                         // [4][7]
+    // Output the sampled color.
+    fColor = tex;                        // premultiplied by blend state
+}

@@ -1,0 +1,14 @@
+#version 330 core
+// Vertex position in normalized screen space.
+layout(location = 0) in vec2 aPos;
+// Texture coordinates for selecting a region from the atlas.
+layout(location = 1) in vec2 aUV;
+// Passed to the fragment shader.
+out vec2 vUV;
+
+void main() {
+    // Forward the UV coordinates to the next stage.
+    vUV = aUV;
+    // Output the vertex position directly in clip space.
+    gl_Position = vec4(aPos, 0.0, 1.0);
+}
