@@ -1,0 +1,19 @@
+{
+  "images": [
+    "assets/images/fern.png",
+    "assets/images/grassforesttile.png",
+    "assets/images/jungleforesttile.png",
+    "assets/images/grassforest.png"
+  ],
+  "regions": [
+    { "source": "assets/images/grassforesttile.png", "x": 68, "y": 0, "w": 256, "h": 257, "name": "grass_large" },
+    { "source": "assets/images/grassforesttile.png", "x": 2,  "y": 132, "w": 64,  "h": 64,  "name": "grass_small" },
+    { "source": "assets/images/grassforest.png", "x": 323, "y": 562, "w": 63, "h": 84, "name": "box_body"},
+    { "source": "assets/images/grassforest.png", "x": 325, "y": 521, "w": 58, "h": 25, "name": "box_top"},
+    { "source": "assets/images/grassforest.png", "x": 324, "y": 546, "w": 61, "h": 6, "name": "box_lid"},
+    { "source": "assets/images/jungleforesttile.png", "x": 68, "y": 0, "w": 256, "h": 257, "name": "jungle_large" },
+    { "source": "assets/images/jungleforesttile.png", "x": 3,  "y": 3, "w": 63,  "h": 63, "name": "jungle_small" },
+    { "source": "assets/images/fern.png", "x":55, "y":0, "w": 156, "h": 259, "name": "multileaf_bright"},
+    { "source": "assets/images/fern.png", "x":319, "y":0, "w": 145, "h": 256, "name": "multileaf_dark"}
+  ]
+}
